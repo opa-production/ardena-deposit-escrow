@@ -1,5 +1,7 @@
 # Ardena Deposit Escrow
 
+[![CI](https://github.com/opa-production/ardena-deposit-escrow/actions/workflows/ci.yml/badge.svg)](https://github.com/opa-production/ardena-deposit-escrow/actions/workflows/ci.yml)
+
 A Soroban smart contract that holds rental security deposits in USDC on Stellar.
 Built for [Ardena](https://ardena.co.ke) and Ardena Business under the Stellar
 Instawards programme (Deliverable 1: Security Deposit Escrow on Stellar).
