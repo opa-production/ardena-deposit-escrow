@@ -36,6 +36,26 @@ backend assigns.
 - A business can only open a dispute before `release_after`.
 - An escrow id can be used once, ever, so a replayed `lock` cannot take a second deposit.
 
+### What the admin and approver keys can do
+
+The contract trusts two keys, set at deployment. Here is their full power:
+
+- **Admin** (Ardena operations): refund a locked deposit to the renter, move a
+  deposit's release date, open a dispute, rotate the admin and approver keys, and
+  **upgrade the contract code**.
+- **Approver** (dispute decisions): split a disputed deposit between business and renter.
+
+`upgrade` exists so a bug found on mainnet can be fixed without stranding locked
+deposits in a broken contract. It also means the admin could, in principle,
+replace the rules above. Every upgrade is a public on-chain transaction that
+changes the contract's WASM hash, so anyone can see it happen and compare the new
+code against this repository.
+
+On testnet both roles share one key. On mainnet the admin and approver are
+separate keys, held offline and used only through Ardena's backend signer, and
+the deployed WASM hash is published below so it can be checked against a build
+of this repository.
+
 Every state change emits an event (`locked`, `released`, `refunded`, `disputed`,
 `resolved`, `release_after_set`), which Ardena's reconciliation reads back.
 
@@ -79,3 +99,8 @@ Smoke run ([log](deployments/smoke-testnet-20261023T230930Z.log)):
 ### Mainnet
 
 Not yet deployed.
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
+Copyright 2026 Ardena Platforms Africa Ltd.
