@@ -1,0 +1,48 @@
+✅ Key saved with alias ardena-admin in "/home/code/.config/stellar/identity/ardena-admin.toml"
+✅ Account ardena-admin funded on "Test SDF Network ; September 2015"
+ℹ️ CARGO_BUILD_RUSTFLAGS=--remap-path-prefix=/home/code/.cargo/registry/src= SOROBAN_SDK_BUILD_SYSTEM_SUPPORTS_SPEC_SHAKING_V2=1 STELLAR_CLI_VERSION=28.1.0 cargo rustc --manifest-path=contracts/deposit_escrow/Cargo.toml --crate-type=cdylib --target=wasm32v1-none --release
+    Finished `release` profile [optimized] target(s) in 0.54s
+ℹ️ Build Summary:
+   Wasm File: target/wasm32v1-none/release/deposit_escrow.wasm (8658 bytes optimized (original size was 10144 bytes))
+   Wasm Hash: 4ac9adf2be33455ca7160010a645e386142f54949cfdcefca074f48eac18b33b
+   Wasm Size: 8658 bytes optimized (original size was 10144 bytes)
+   Exported Functions: 15 found
+     • __constructor
+     • admin
+     • approver
+     • dispute
+     • get
+     • lock
+     • refund
+     • release
+     • release_early
+     • resolve
+     • set_admin
+     • set_approver
+     • set_release_after
+     • token
+     • upgrade
+✅ Build Complete
+
+ℹ️ Uploading contract WASM…
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 8284d8d97b3b9ba485693ea105125ae7a9b1caf56d534936a77eb6192dbbdcd8
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/8284d8d97b3b9ba485693ea105125ae7a9b1caf56d534936a77eb6192dbbdcd8
+ℹ️ Deploying contract using wasm hash 4ac9adf2be33455ca7160010a645e386142f54949cfdcefca074f48eac18b33b
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 2fd41de101957a34f89266bc7fc488c143bd24b61290309d1dd8cce3dc5601a5
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/2fd41de101957a34f89266bc7fc488c143bd24b61290309d1dd8cce3dc5601a5
+🔗 https://lab.stellar.org/r/testnet/contract/CA2INW4KOK3JF3S6UYDFIUWJQ677SEQM2WFAFSHZYS3YPKULYWVJ6BD6
+✅ Deployed!
+
+network      testnet
+wasm sha256  4ac9adf2be33455ca7160010a645e386142f54949cfdcefca074f48eac18b33b
+contract     CA2INW4KOK3JF3S6UYDFIUWJQ677SEQM2WFAFSHZYS3YPKULYWVJ6BD6
+admin        GAYMDOWLUS3VG33WQX556N2PZ3J22MMQC6VQUCZMRA5GDZY2B7NA67QD
+approver     GAYMDOWLUS3VG33WQX556N2PZ3J22MMQC6VQUCZMRA5GDZY2B7NA67QD
+usdc token   CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA
+deployed at  2026-10-23T23:08:58Z
