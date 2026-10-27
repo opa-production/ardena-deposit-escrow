@@ -55,3 +55,23 @@ authorisation entries instead of relying on the transaction signature:
 | lock 1.25 USDC (escrow 7234937802486271860) | `3e2b8e685d93be9b29e6fa50c6fd44fe9fd893dbd04d287042d6bce430a710ef` |
 | set_release_after | `8ca1e9cf5450cf9a760b7ed418e0d242f98fd700d8813846b0d320328f631df4` |
 | release, then sync_from_chain → released | `0d23068205135e82209f861f947f60622998a9d8f65bd28d3241d89e32ef316a` |
+
+## On the staging server
+
+`scripts/escrow_smoke.py` run on the staging deployment (testing.ardena.xyz),
+with two fresh 0-XLM managed wallets:
+
+- Renter `GDG6GFRIQDQQNKFDYCRKTDVW4K5URCTZNNFJKXOI6N5NCFKW6DDUA2P3`
+- Business `GAZOOY2GR4VPZMVWFGZXFNCQCTOHVGRTQHRXSKWMFMZESPRSVIKGO3PO`
+
+| Step | Transaction |
+|---|---|
+| lock 2 USDC, due now | `f4d9c24a713ed78488cf72e57030f072281721a7a106648d8860152151ea8662` |
+| release (permissionless) | `b3dd79c0e2c6b9a7e1d4c7f793c35bdbbffbb0f2e425f69482cc363a55450800` |
+| lock 3 USDC | `6be82a3c82b9d3ae1ecd794d588f46a327332360309097a9b492ce0777dc86ed` |
+| dispute (business) | `9e6199eefffe70f92bc4dc5aa0ee363c7dbc0e63991831e47e3941c185c102e4` |
+| resolve 0.9 to business | `fa4b91ad08aa86a0b675c8da01b14042004b345f7e318c073b7732d346d2ccfd` |
+| lock 1 USDC | `3df40dda72109ac5f1993540b09f85d43ec9215279e0f0e3dc12c4b66bbb481b` |
+| refund (admin) | `1e126bee58dbaf23dffea90e0d468f69f49e70689b1bb3a283cadd11774d0a94` |
+
+End balances: renter 9.1 USDC, **0 XLM**; business 0.9 USDC, **0 XLM**.
