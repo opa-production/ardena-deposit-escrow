@@ -1,0 +1,156 @@
+ℹ️ Simulation identified as read-only. Send by rerunning with `--send=yes`.
+ℹ️ Simulation identified as read-only. Send by rerunning with `--send=yes`.
+ℹ️ Contract alias 'waiver_pool_testnet' references CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI on network 'Test SDF Network ; September 2015'
+ℹ️ Signing transaction: 1c06bbae14e8aad733d4f6b9a780d3eecca2a0cad7f69a8fe9297d9b4374d7ed
+ℹ️ Signing transaction: 56be08cc5c6e7f13e37b6b61c9caf5d7b120347e79a6029453a26c2dcf78266c
+ℹ️ Signing transaction: f2fd3c9c028c84f692034e56c1aa738f2cbf80bf491a29b884c2e4cea59499f2
+ℹ️ Simulation identified as read-only. Send by rerunning with `--send=yes`.
+pool balance before: "811810588"
+== 1. collect → settle (window already passed)
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 9f6bcc00d04b8705e2a3b7c7c0a026f63eb7b72b5e5c11909a55c293aefaaa4f
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/9f6bcc00d04b8705e2a3b7c7c0a026f63eb7b72b5e5c11909a55c293aefaaa4f
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"20000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Collected (collected), waiver_id: 17935625531, payer: "GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ", business: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7", fee: "20000000", settle_after: 1793562493
+
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 9b2da80462e226acfc13776f890ea9c67b9fa827240d80208aa922f1b3865285
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/9b2da80462e226acfc13776f890ea9c67b9fa827240d80208aa922f1b3865285
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"address":"GDVJ7JYLBASJZ7HN753MMMDHEKGLSDZUPNWJEX2HVVASY4I3EHUEH7I3"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"20000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Settled (settled), waiver_id: 17935625531, pool: "GDVJ7JYLBASJZ7HN753MMMDHEKGLSDZUPNWJEX2HVVASY4I3EHUEH7I3", fee: "20000000"
+
+ℹ️ Simulation identified as read-only. Send by rerunning with `--send=yes`.
+{"business":"GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7","fee":"20000000","paid_out":"0","payer":"GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ","settle_after":1793562493,"status":2}
+== 2. collect → claim → pay_claim (6 USDC, pool tops up 4)
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 16644f6b4f3858adb3fd18f4442d0eff51953b75b8f259acf0d40bbd208b05f4
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/16644f6b4f3858adb3fd18f4442d0eff51953b75b8f259acf0d40bbd208b05f4
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"20000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Collected (collected), waiver_id: 17935625532, payer: "GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ", business: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7", fee: "20000000", settle_after: 1793648953
+
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 5c82b7bc973d6addb0cc320d78e6eb16b0eb263f5d70a85e44f8c7adeac0e4b7
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/5c82b7bc973d6addb0cc320d78e6eb16b0eb263f5d70a85e44f8c7adeac0e4b7
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Claimed (claimed), waiver_id: 17935625532, by: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7"
+
+auth entry covered by the source account
+auth entry signed by GDVJ7JYLBASJZ7HN753MMMDHEKGLSDZUPNWJEX2HVVASY4I3EHUEH7I3
+pay_claim SUCCESS: a809907e2c92903ac92a0d6d175940eea30243455a2d6932502d187984e28c28
+ℹ️ Simulation identified as read-only. Send by rerunning with `--send=yes`.
+{"business":"GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7","fee":"20000000","paid_out":"60000000","payer":"GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ","settle_after":1793648953,"status":3}
+== 3. collect → claim → reject_claim
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 5b6839dc8266f6acd9c2480221d363c412296e8bb20efe9d2ea8c1c9faccf202
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/5b6839dc8266f6acd9c2480221d363c412296e8bb20efe9d2ea8c1c9faccf202
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"20000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Collected (collected), waiver_id: 17935625533, payer: "GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ", business: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7", fee: "20000000", settle_after: 1793648953
+
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 2dbc027657f5014f333170eb625ccfa08e5d2b3b2685bf6854cc0dcb95c99ae9
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/2dbc027657f5014f333170eb625ccfa08e5d2b3b2685bf6854cc0dcb95c99ae9
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Claimed (claimed), waiver_id: 17935625533, by: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7"
+
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: cae83b50800c306f2b5f4edacbe05d7d151d947498725a37334a52e4d3443dc7
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/cae83b50800c306f2b5f4edacbe05d7d151d947498725a37334a52e4d3443dc7
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"address":"GDVJ7JYLBASJZ7HN753MMMDHEKGLSDZUPNWJEX2HVVASY4I3EHUEH7I3"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"20000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Rejected (rejected), waiver_id: 17935625533, pool: "GDVJ7JYLBASJZ7HN753MMMDHEKGLSDZUPNWJEX2HVVASY4I3EHUEH7I3", fee: "20000000"
+
+ℹ️ Simulation identified as read-only. Send by rerunning with `--send=yes`.
+{"business":"GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7","fee":"20000000","paid_out":"0","payer":"GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ","settle_after":1793648953,"status":4}
+== 4. collect → refund
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: cad1b0cc71b23a56c24777c6bd75570cedb5e93cde00876997bc7cf69defc541
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/cad1b0cc71b23a56c24777c6bd75570cedb5e93cde00876997bc7cf69defc541
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"20000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Collected (collected), waiver_id: 17935625534, payer: "GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ", business: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7", fee: "20000000", settle_after: 1793648953
+
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: e5e0c4d257d200c6128d26bd5dc50469181280990c16d3963930eee1800cd56c
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/e5e0c4d257d200c6128d26bd5dc50469181280990c16d3963930eee1800cd56c
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"address":"GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"20000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Refunded (refunded), waiver_id: 17935625534, payer: "GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ", fee: "20000000"
+
+ℹ️ Simulation identified as read-only. Send by rerunning with `--send=yes`.
+{"business":"GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7","fee":"20000000","paid_out":"0","payer":"GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ","settle_after":1793648953,"status":5}
+== 5. business pays (dashboard booking) → claim → pay_claim 1 USDC
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 8136b49eae1637655e282ed9d26715c4d6fd3590c87b9b2e61cd9e6d72ac28d7
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/8136b49eae1637655e282ed9d26715c4d6fd3590c87b9b2e61cd9e6d72ac28d7
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"20000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Collected (collected), waiver_id: 17935625535, payer: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7", business: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7", fee: "20000000", settle_after: 1793648953
+
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 57fe32721feb2f23d9795ebcec78160fc0a7562fe92f28c41a912c588a979042
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/57fe32721feb2f23d9795ebcec78160fc0a7562fe92f28c41a912c588a979042
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Claimed (claimed), waiver_id: 17935625535, by: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7"
+
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: f6662dc58a2267a200a8660a5355182a36bfb94422ac0f3acb8f2de64c6ec44e
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/f6662dc58a2267a200a8660a5355182a36bfb94422ac0f3acb8f2de64c6ec44e
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"address":"GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"10000000"}
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"address":"GDVJ7JYLBASJZ7HN753MMMDHEKGLSDZUPNWJEX2HVVASY4I3EHUEH7I3"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"10000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: PaidOut (paid_out), waiver_id: 17935625535, business: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7", amount: "10000000", from_pool: "0", fee_to_pool: "10000000"
+
+ℹ️ Simulation identified as read-only. Send by rerunning with `--send=yes`.
+{"business":"GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7","fee":"20000000","paid_out":"10000000","payer":"GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7","settle_after":1793648953,"status":3}
+== over-cap claim is refused by the contract
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 96c73e96e43ac63ee055685944f4676fbcae963fb624010eebb01fd26c29b3b6
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/96c73e96e43ac63ee055685944f4676fbcae963fb624010eebb01fd26c29b3b6
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"20000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Collected (collected), waiver_id: 17935625536, payer: "GBRLUW6UBPTCZMJTSYOKRNZBTR725EZHJV4UQGAPQI5UVJNOTAVKTIBQ", business: "GAI3VZHAFX7PEXYE6OTE64VCQRE7ZQIOVEFTY6DPST6STH6M4IQW5OS7", fee: "20000000", settle_after: 1793562493
+
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 9747b25ecfa469a5ee30d679809ccb7ac03ebbb38a51e0e638dacd7eb7ff7901
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/9747b25ecfa469a5ee30d679809ccb7ac03ebbb38a51e0e638dacd7eb7ff7901
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Claimed (claimed), waiver_id: 17935625536, by: "GAYMDOWLUS3VG33WQX556N2PZ3J22MMQC6VQUCZMRA5GDZY2B7NA67QD"
+
+❌ error: transaction simulation failed: HostError: Error(Contract, #8)
+
+Event log (newest first):
+   0: [Diagnostic Event] contract:CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI, topics:[error, Error(Contract, #8)], data:"escalating error to VM trap from failed host function call: fail_with_error"
+   1: [Diagnostic Event] contract:CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI, topics:[error, Error(Contract, #8)], data:["failing with contract error", 8]
+   2: [Diagnostic Event] topics:[fn_call, CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI, pay_claim], data:[17935625536, 1500000001]
+
+refused as expected
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 351bf97ee84305bcaa6ac468992af96d267dcc116053b9fb3d323381ba17e2e1
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/351bf97ee84305bcaa6ac468992af96d267dcc116053b9fb3d323381ba17e2e1
+📅 CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA - Success - Event: [{"symbol":"transfer"},{"address":"CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI"},{"address":"GDVJ7JYLBASJZ7HN753MMMDHEKGLSDZUPNWJEX2HVVASY4I3EHUEH7I3"},{"string":"USDC:GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"}] = {"i128":"20000000"}
+📅 CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI - Success - Event: Rejected (rejected), waiver_id: 17935625536, pool: "GDVJ7JYLBASJZ7HN753MMMDHEKGLSDZUPNWJEX2HVVASY4I3EHUEH7I3", fee: "20000000"
+
+ℹ️ Simulation identified as read-only. Send by rerunning with `--send=yes`.
+pool balance after: "841810588"
+ℹ️ Simulation identified as read-only. Send by rerunning with `--send=yes`.
+contract balance after: "0"

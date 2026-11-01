@@ -1,0 +1,55 @@
+✅ Key saved with alias ardena-waiver-pool in "/home/code/.config/stellar/identity/ardena-waiver-pool.toml"
+✅ Account ardena-waiver-pool funded on "Test SDF Network ; September 2015"
+ℹ️ Signing transaction: 6798eddd50ebac8104dc9e8e4cf7ce5cf9f2ecc4f7cd32affb8fefbff9456e5a
+ℹ️ CARGO_BUILD_RUSTFLAGS=--remap-path-prefix=/home/code/.cargo/registry/src= SOROBAN_SDK_BUILD_SYSTEM_SUPPORTS_SPEC_SHAKING_V2=1 STELLAR_CLI_VERSION=28.1.0 cargo rustc --manifest-path=contracts/waiver_pool/Cargo.toml --crate-type=cdylib --target=wasm32v1-none --release
+    Finished `release` profile [optimized] target(s) in 0.38s
+ℹ️ Build Summary:
+   Wasm File: target/wasm32v1-none/release/waiver_pool.wasm (10717 bytes optimized (original size was 12590 bytes))
+   Wasm Hash: 9eeaacb7b61fada292062847ef11efae8847345df900ac98b727431a8b2b6a20
+   Wasm Size: 10717 bytes optimized (original size was 12590 bytes)
+   Exported Functions: 19 found
+     • __constructor
+     • admin
+     • approver
+     • claim
+     • collect
+     • get
+     • max_payout
+     • pay_claim
+     • pool
+     • refund
+     • reject_claim
+     • set_admin
+     • set_approver
+     • set_max_payout
+     • set_pool
+     • set_settle_after
+     • settle
+     • token
+     • upgrade
+✅ Build Complete
+
+ℹ️ Uploading contract WASM…
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 23780abe82b6bf1340e8b1763a630efd9bd9905c7a25bffe22488ffc88d96dd0
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/23780abe82b6bf1340e8b1763a630efd9bd9905c7a25bffe22488ffc88d96dd0
+ℹ️ Deploying contract using wasm hash 9eeaacb7b61fada292062847ef11efae8847345df900ac98b727431a8b2b6a20
+ℹ️ Simulating transaction…
+ℹ️ Signing transaction: 2422adec3187d7b74a7c01f91550a441138576b5c7f797884fc56ae436441df4
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/2422adec3187d7b74a7c01f91550a441138576b5c7f797884fc56ae436441df4
+🔗 https://lab.stellar.org/r/testnet/contract/CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI
+✅ Deployed!
+
+network      testnet
+wasm sha256  9eeaacb7b61fada292062847ef11efae8847345df900ac98b727431a8b2b6a20
+contract     CCTPRGEPD6HEIQBMMGCAWLQJ5QYTZ6G3SH67LUGJKYBBNSVN3BGSJLQI
+admin        GAYMDOWLUS3VG33WQX556N2PZ3J22MMQC6VQUCZMRA5GDZY2B7NA67QD
+approver     GAYMDOWLUS3VG33WQX556N2PZ3J22MMQC6VQUCZMRA5GDZY2B7NA67QD
+pool         GDVJ7JYLBASJZ7HN753MMMDHEKGLSDZUPNWJEX2HVVASY4I3EHUEH7I3
+max payout   1500000000
+usdc token   CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA
+deployed at  2026-11-01T19:47:42Z

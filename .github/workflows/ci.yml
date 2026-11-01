@@ -34,4 +34,4 @@ jobs:
       - name: Build contract
         run: |
           stellar contract build
-          sha256sum target/wasm32v1-none/release/deposit_escrow.wasm
+          sha256sum target/wasm32v1-none/release/*.wasm
